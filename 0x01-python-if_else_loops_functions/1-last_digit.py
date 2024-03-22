@@ -3,8 +3,8 @@ import random
 number = random.randint(-10000, 10000)
 lastDigit = -(abs(number) % 10) if number < 1 else (abs(number) % 10)
 
-str = f'Last digit of {number} is {lastDigit}'
-print(str)
+print(f'Last digit of {number} is {lastDigit}', end="")
+
 if lastDigit == 0:
     print(' and is 0')
 elif lastDigit < 6:
