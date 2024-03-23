@@ -11,13 +11,15 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
     a = int(argv[1])
-    b = int(argv[3])
     op = argv[2]
+    b = int(argv[3])
     if op == '+':
         print("{} {} {} = {}".format(a, op, b, add(a, b)))
-    if op == '*':
+    elif op == '*':
         print("{} {} {} = {}".format(a, op, b, mul(a, b)))
-    if op == '-':
+    elif op == '-':
         print("{} {} {} = {}".format(a, op, b, sub(a, b)))
-    if op == '/':
+    elif op == '/':
         print("{} {} {} = {}".format(a, op, b, div(a, b)))
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
