@@ -20,7 +20,7 @@ if __name__ == "__main__":
         '/': div
     }
     if op in list.keys():
-        print("{} {} {} = {}".format(a, op, b, list[op]))
+        print("{} {} {} = {}".format(a, op, b, list[op](a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
