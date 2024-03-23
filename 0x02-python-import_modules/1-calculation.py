@@ -1,7 +1,7 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 
 if __name__ == "__main__":
-    """To print the sum of 1 and 2."""
+    """add, sub, mul, div"""
 
     from calculator_1 import add, sub, mul, div
     a = 10
