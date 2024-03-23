@@ -21,3 +21,4 @@ if __name__ == "__main__":
         print("{} {} {} = {}".format(a, op, b, sub(a, b)))
     if op == '/':
         print("{} {} {} = {}".format(a, op, b, div(a, b)))
+
