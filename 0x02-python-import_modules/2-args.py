@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+if __name__ == "__name__":
+    print("ha wahd salam alikom")
+
 import sys
 
 len = len(sys.argv) - 1
