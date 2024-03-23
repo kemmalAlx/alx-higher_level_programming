@@ -6,7 +6,6 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     from sys import argv
 
-
     len = len(argv) -1
     if len != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
