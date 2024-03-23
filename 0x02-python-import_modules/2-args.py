@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-if __name__ == "__name__":
-    print("ha wahd salam alikom")
+if __name__ == "__main__":
+    """Program that prints the number of and the list of its arguments."""
 
 import sys
 
