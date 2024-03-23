@@ -3,9 +3,9 @@
 if __name__ == "__main__":
     """Program that prints the number of and the list of its arguments."""
 
-import sys
+from sys import argv
 
-len = len(sys.argv) - 1
+len = len(argv) - 1
 if len == 0:
     print("0 arguments.")
 else:
@@ -14,4 +14,4 @@ else:
     else:
         print("{} arguments:".format(len))
     for i in range(1, len + 1):
-        print("{}: {}".format(i, sys.argv[i]))
+        print("{}: {}".format(i, argv[i]))
