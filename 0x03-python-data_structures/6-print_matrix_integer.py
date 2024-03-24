@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     if not matrix:
-        return
+        print("")
     for i in matrix:
         count = len(i)
         cp = 0
