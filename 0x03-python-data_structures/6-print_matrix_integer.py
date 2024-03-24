@@ -6,6 +6,6 @@ def print_matrix_integer(matrix=[[]]):
         for j in i:
             cp += 1
             if cp == count:
-                print("{}".format(j))
+                print("{:d}".format(j))
             else:
-                print("{}".format(j), end=" ")
+                print("{:d}".format(j), end=" ")
