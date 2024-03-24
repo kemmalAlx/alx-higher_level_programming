@@ -3,7 +3,7 @@ def print_matrix_integer(matrix=[[]]):
     if matrix == [[]]:
         print()
     else:
-        for i in matrix:
-            for j in i:
-                print("{:d}".format(j), end=' '
-                      if j != i[-1] else '\n')
+        for row in matrix:
+            for column in row:
+                print("{:d}".format(column), end=' '
+                      if column != row[-1] else '\n')
