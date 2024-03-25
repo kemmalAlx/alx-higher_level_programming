@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 # my code
+"""
 def My_only_diff_elements(set_1, set_2):
     new_set = []
     for s in set_1:
@@ -13,6 +14,7 @@ def My_only_diff_elements(set_1, set_2):
         if my_dict[m] == 1:
             ret.append(m)
     return ret
+"""
 # simplifier code by Copilot
 def only_diff_elements(set_1, set_2):
     return set_1 ^ set_2
