@@ -22,7 +22,7 @@ def roman_to_int(roman_string):
         current = roman.get(r)
         if not current:
             return 0
-        if current >= tmp:
+        if current < tmp:
             total -= current
         else:
             total += current
