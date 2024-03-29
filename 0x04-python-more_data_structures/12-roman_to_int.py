@@ -18,9 +18,12 @@ def roman_to_int(roman_string):
     total = 0
     tmp = 0
     for r in reversed(roman_string):
-        if roman[r] >= tmp:
-            total -= roman[r]
+        current = roman.get(r)
+        if not current:
+            return 0
+        if current >= tmp:
+            total -= current
         else:
-            total += roman[r]
-        tmp = roman[r]
+            total += current
+        tmp = current
     return abs(total)
