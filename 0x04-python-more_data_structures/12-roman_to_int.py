@@ -14,17 +14,17 @@ roman = {
 
 
 def roman_to_int(roman_string):
-    if not roman_string:
-        return 0
     total = 0
     tmp = 0
-    for r in reversed(roman_string):
-        current = roman.get(r)
-        if not current:
-            return 0
-        if current < tmp:
-            total -= current
-        else:
-            total += current
-        tmp = current
-    return abs(total)
+    if type(roman_string) is str and roman_string:
+        for r in reversed(roman_string):
+            current = roman.get(r)
+            if not current:
+                return 0
+            if current < tmp:
+                total -= current
+            else:
+                total += current
+            tmp = current
+        return total
+    return 0
